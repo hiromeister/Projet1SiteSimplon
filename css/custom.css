@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,900');
+
+* { font-family: 'Roboto', sans-serif;
+ }
+
+/*==Début Hamburger*/
+
+main header h1 {
+    margin: 0;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s;
+}
+
+.overlay.visible {
+    opacity: 1;
+}
+
+/* Nav */
+
+#nav-main {
+    width: 200px;
+    height: 100%;
+    position: fixed;
+    left: -200px;
+    z-index: 2;
+    background: #565D67;
+    transition: all 0.3s;
+}
+
+#nav-main.open {
+    left: 0;
+}
+
+#nav-main ul {
+    padding: 90px 0 0 0;
+    list-style: none;
+}
+
+#nav-main li {
+    margin: 16px 24px;
+}
+
+#nav-main li a{
+	text-decoration: none;
+	color:#fff;
+	text-transform: uppercase;
+	padding: 20px 0 0 10px;
+
+}
+
+#nav-main li a:hover {
+	color:#efdf31;
+}
+
+hr{ width: 100px; }
+
+#nav-main img { height: 22px; width: 22px; 
+				}
+
+/* Nav button. Nav button animation credit: Nick Salloum
+http://callmenick.com/post/animating-css-only-hamburger-menu-icons */
+#nav-button {
+    display: block;
+    position: fixed;
+    top: 8px;
+    left: 8px;
+    z-index: 3;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    width: 48px;
+    height: 48px;
+    font-size: 0;
+    text-indent: -9999px;
+    background: #262626;
+    appearance: none;
+    border-radius: 50%;
+    border: none;
+    box-shadow: 0 0 0 2px #262626;
+    cursor: pointer;
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+
+#nav-button.hidden {
+    transform: translateY(-68px);
+}
+
+#nav-button:focus {
+    outline: none;
+}
+
+#nav-button span {
+    display: block;
+    position: absolute;
+    top: 23px;
+    left: 16px;
+    right: 16px;
+    height: 2px;
+    background: #fff;
+}
+
+#nav-button span::before,
+#nav-button span::after {
+    position: absolute;
+    display: block;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    content: "";
+}
+
+#nav-button span::before {
+    top:-6px;
+}
+
+#nav-button span::after {
+    bottom: -6px;
+}
+
+/* Nav button animation */
+#nav-button span {
+    transition: transform 0.3s;
+}
+
+#nav-button span::before {
+    transform-origin: top right;
+    transition: transform 0.3s, width 0.3s, top 0.3s;
+}
+
+#nav-button span::after {
+    transform-origin: bottom right;
+    transition: transform 0.3s, width 0.3s, bottom 0.3s;
+}
+
+/* Menu open */
+#nav-button.open {
+    box-shadow: none;
+}
+
+#nav-button.open span {
+    transform: rotate(180deg);
+}
+
+#nav-button.open span::before,
+#nav-button.open span::after {
+    width: 50%;
+}
+
+#nav-button.open span::before {
+    top: 0;
+    transform: translateX(6px) translateY(1px) rotate(45deg);
+}
+
+#nav-button.open span::after {
+    bottom: 0;
+    transform: translateX(6px) translateY(1px) rotate(-45deg);
+}
+
+
+
+/*==Fin Hamburger*/
+
+/*BANNIERE*/
+ #home .banner{
+  background-color:#262626;
+  background-size: cover;
+  background-position: center center;
+  height: 100%;
+  min-height: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  margin:0;
+  padding:0;
+  font-family: 'Arvo', serif;
+
+}
+
+#home .banner .container img{
+	height: 100px;
+	width: 100px;
+}
+
+#home .banner .container h1{
+	text-transform: uppercase;
+	font-weight: 900;
+	font-size: 80px;
+	color:#F3E036;
+	letter-spacing: 6px;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+.points {
+	display:block;
+	width:710px;
+	height: 1px;
+	background:url(../images/border-logo.png) repeat-x left center;
+	margin: 4px auto 15px auto;
+}
+
+#home .banner .container h2{ font-size: 15px;
+	color:#fff; 
+	text-transform: uppercase;
+	font-weight: bold;}
+
+#home .banner .container h2 span {color:#F3E036; }
+
+
