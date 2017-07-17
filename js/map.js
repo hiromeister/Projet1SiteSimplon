@@ -1,7 +1,7 @@
  function initMap() {
-    var simplon = {lat: -20.898319, lng: 55.473887};
-    var map = new google.maps.Map(document.getElementById('map'), {
-      zoom: 15,
+    let simplon = {lat: -20.898389, lng: 55.473833};
+    let map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 17,
       center: simplon,
       styles: [
       {
@@ -21,10 +21,25 @@
       },
             ]
         });
-    var icon = 'images/markeur_blanc.png';
-    var marker = new google.maps.Marker({
+
+    let contentString = '<div id="content">'+
+      '<div id="siteNotice">'+
+      '</div>'+
+      '<h1 id="firstHeading" class="firstHeading">Simplon Réunion</h1>'+
+      '<div id="bodyContent">'+
+      '<p>Dans les locaux de la <b>Ressourcerie, <a href="https://www.facebook.com/La-Ressourcerie-L%C3%A9L%C3%A0-ADRIE-249023225256835/">ADRIE</a></b>.</p>' + '<p>21 rue Vavangues, ZAC Finette, 97490 Sainte-Clotilde</p>' + '</div>'+ '</div>';
+
+    let infowindow = new google.maps.InfoWindow({
+      content: contentString
+    });
+
+    let icon = 'images/markeur_blanc.png';
+    let marker = new google.maps.Marker({
       position: simplon,
       icon,
       map: map
+  });
+    marker.addListener('click', function() {
+    infowindow.open(map, marker);
   });
 }
