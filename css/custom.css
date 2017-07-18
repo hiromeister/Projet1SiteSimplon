@@ -175,8 +175,9 @@ http://callmenick.com/post/animating-css-only-hamburger-menu-icons */
 
 /*BANNIERE*/
  #home .banner{
-  background-color:#262626;
-  background-size: cover;
+  background-image:url(../images/home-pattern.png), url(../images/bg2.jpg);
+  background-repeat: repeat, no-repeat;
+  background-size: auto, cover;
   background-position: center center;
   height: 100%;
   min-height: 100%;
@@ -186,8 +187,9 @@ http://callmenick.com/post/animating-css-only-hamburger-menu-icons */
   margin:0;
   padding:0;
   font-family: 'Arvo', serif;
-
 }
+
+
 
 #home .banner .container img{
 	height: 100px;
@@ -219,3 +221,220 @@ http://callmenick.com/post/animating-css-only-hamburger-menu-icons */
 #home .banner .container h2 span {color:#F3E036; }
 
 
+#apprenants .introApprenants { padding-top: 50px; }
+
+#apprenants .introApprenants h1 {font-size: 41px; color:#2a4789; text-transform: uppercase; font-weight: bold; }
+
+#apprenants hr { border-color:#2a4789; width: 100%; padding-bottom: 50px; }
+
+
+
+#formation .container h1 {font-size: 41px; color:#2a4789; text-transform: uppercase; font-weight: bold; padding-top: 50px;}
+
+#formation hr { border-color:#2a4789; width: 100%; padding-bottom: 50px; }
+
+
+
+
+
+
+/*====================== BLOC APPRENANTS ==================================
+*/
+
+/*==Denilson*/
+
+#apprenants .image1 {background-image: url('../images/apprenants/houssen.jpg');
+						background-position: center center;
+					 width: 180px; height: 230px;
+					 border-radius: 1%;
+
+					  }
+
+#apprenants .image1 .bloc { width: 180px; height: 50px;
+							background-color: #efdf31; 
+							color:#2a4789; font-weight: bold; font-family: 'Roboto', sans-serif; text-align: center;
+							position: relative; top: 170px;
+							}
+
+/*==Fin Denislon*/
+
+
+/*==Remy*/
+
+#apprenants .image2 {background-image: url('../images/apprenants/Remy.jpg')
+						background-position: center ;
+					 width: 180px; height: 230px;
+
+					  }
+
+#apprenants .image2 .bloc { width: 180px; height: 50px;
+							background-color: #efdf31; 
+							color:#2a4789; font-weight: bold; font-family: 'Roboto', sans-serif; text-align: center; position: relative; top: 170px;}
+
+/*==Fin Remy*/
+
+#apprenants .image3 {background-image: url('../images/apprenants/bruno.jpg');
+						background-position:center ;
+					 width: 180px; height: 230px;
+					  }
+
+#apprenants .image3 .bloc { width: 180px; height: 50px;
+							background-color: #efdf31; 
+							color:#2a4789; font-weight: bold; font-family: 'Roboto', sans-serif; text-align: center; position: relative; top: 170px;}
+
+
+#apprenants .image4 {background-image: url('../images/apprenants/denilson.jpg');
+						background-position:center ;
+					 width: 180px; height: 230px;
+					  }
+
+#apprenants .image4 .bloc { width: 180px; height: 50px;
+							background-color: #efdf31; 
+							color:#2a4789; font-weight: bold; font-family: 'Roboto', sans-serif; text-align: center; position: relative; top: 170px;}
+
+
+#apprenants .image5 {background-image: url('../images/apprenants/alex.jpg');
+						background-position: center;
+					 width: 180px; height: 230px;
+					 
+					  }
+
+#apprenants .image5 .bloc { width: 180px; height: 50px;
+							background-color: #efdf31; 
+							color:#2a4789; font-weight: bold; font-family: 'Roboto', sans-serif; text-align:center; position: relative; top: 170px;}
+
+
+#apprenants .image6 {background-image: url('../images/apprenants/alex.jpg');
+						background-position: center;
+					 width: 180px; height: 230px;
+					 
+					  }
+
+#apprenants .image6 .bloc { width: 180px; height: 50px;
+							background-color: #efdf31; 
+							color:#2a4789; font-weight: bold; font-family: 'Roboto', sans-serif; text-align:center; position: relative; top: 170px;}							
+
+
+#apprenants .image7 {background-image: url('../images/apprenants/alex.jpg');
+						background-position: center;
+					 width: 180px; height: 230px;
+					 
+					  }
+
+#apprenants .image7 .bloc { width: 180px; height: 50px;
+							background-color: #efdf31; 
+							color:#2a4789; font-weight: bold; font-family: 'Roboto', sans-serif; text-align:center; position: relative; top: 170px;}
+
+
+#apprenants .image8 {background-image: url('../images/apprenants/alexC.jpg');
+						background-position: center;
+					 width: 180px; height: 230px;
+					 
+					  }
+
+#apprenants .image8 .bloc { width: 180px; height: 50px;
+							background-color: #efdf31; 
+							color:#2a4789; font-weight: bold; font-family: 'Roboto', sans-serif; text-align:center; position: relative; top: 170px;}
+
+
+#apprenants .image9 {background-image: url('../images/apprenants/valerie.jpg');
+						background-position: center;
+					 width: 180px; height: 230px;
+					 
+					  }
+
+#apprenants .image9 .bloc { width: 180px; height: 50px;
+							background-color: #efdf31; 
+							color:#2a4789; font-weight: bold; font-family: 'Roboto', sans-serif; text-align:center; position: relative; top: 170px;}
+
+
+
+#apprenants .image10 {background-image: url('../images/apprenants/laurent.jpg');
+						background-position: center;
+					 width: 180px; height: 230px;
+					 
+					  }
+
+#apprenants .image10 .bloc { width: 180px; height: 50px;
+							background-color: #efdf31; 
+							color:#2a4789; font-weight: bold; font-family: 'Roboto', sans-serif; text-align:center; position: relative; top: 170px;}
+
+
+#apprenants .image11 {background-image: url('../images/apprenants/alex.jpg');
+						background-position: center;
+					 width: 180px; height: 230px;
+					 
+					  }
+
+#apprenants .image11 .bloc { width: 180px; height: 50px;
+							background-color: #efdf31; 
+							color:#2a4789; font-weight: bold; font-family: 'Roboto', sans-serif; text-align:center; position: relative; top: 170px;}
+
+
+#apprenants .image12 {background-image: url('../images/apprenants/josephine.jpg');
+						background-position: center;
+					 width: 180px; height: 230px;
+					 
+					  }
+
+#apprenants .image12 .bloc { width: 180px; height: 50px;
+							background-color: #efdf31; 
+							color:#2a4789; font-weight: bold; font-family: 'Roboto', sans-serif; text-align:center; position: relative; top: 170px;}
+
+
+#apprenants .image13 {background-image: url('../images/apprenants/thomas.jpg');
+						background-position: center;
+					 width: 180px; height: 230px;
+					 
+					  }
+
+#apprenants .image13 .bloc { width: 180px; height: 50px;
+							background-color: #efdf31; 
+							color:#2a4789; font-weight: bold; font-family: 'Roboto', sans-serif; text-align:center; position: relative; top: 170px;}
+
+
+
+#apprenants .image14 {background-image: url('../images/apprenants/Remy.jpg');
+						background-position: center;
+					 width: 180px; height: 230px;
+					 
+					  }
+
+#apprenants .image14 .bloc { width: 180px; height: 50px;
+							background-color: #efdf31; 
+							color:#2a4789; font-weight: bold; font-family: 'Roboto', sans-serif; text-align:center; position: relative; top: 170px;}
+
+
+
+#apprenants .image15 {background-image: url('../images/apprenants/vellen.jpg');
+						background-position: center;
+					 width: 180px; height: 230px;
+					 
+					  }
+
+#apprenants .image15 .bloc { width: 180px; height: 50px;
+							background-color: #efdf31; 
+							color:#2a4789; font-weight: bold; font-family: 'Roboto', sans-serif; text-align:center; position: relative; top: 170px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.image1, .image2, .image3, .image4, .image5, .image6, .image7, .image8, .image9, .image10, .image11, .image12, .image13, .image14, .image15{ display: inline-block; margin-left: 40px; }
+
+.bloc2, .bloc3 {padding-top: 50px;}
