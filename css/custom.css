@@ -243,8 +243,9 @@ http://callmenick.com/post/animating-css-only-hamburger-menu-icons */
 
 /*==Denilson*/
 
-#apprenants .image1 {background-image: url('../images/apprenants/houssen.jpg');
-						background-position: center center;
+#apprenants .image1 { /*background-color: white;*/	
+					background-image: url('../images/apprenants/houssen.jpg');
+					background-position: center center;
 					 width: 180px; height: 230px;
 					 border-radius: 1%;
 
