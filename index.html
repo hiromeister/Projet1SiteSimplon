@@ -11,14 +11,14 @@
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/custom.css">
+  <link rel="shortcut icon" href="images/logorond.png">
 
-  <style type="text/css">
+<style type="text/css">
     .profils-item{
       text-align: center;
       border-radius: 5px;
       margin: 5px 5px;
     }
-
     .profils-item img{
       width: 100px;
       height: 100px;
@@ -26,44 +26,50 @@
       border: 3px solid #efdf31;
       margin: 10px 0px;
     }
-
     .profils-item h1{
       font-size: 20px;
       margin: 0px 0px; 
       color: #2a4789;
     }
-
     .profils-item .reseaux-sociaux{
       display: flex;
       position: center;
     } 
-
     .profils-item .reseaux-sociaux a{
       color: red;
     }
-
     .profils-item .fa{
       margin-right: 20px;
       color: black;
     }
-
   </style>
 </head>
 <body>
+
   <button id='nav-button'>
     <span>Menu</span>
   </button>
   <nav id='nav-main'>
     <ul>
-      <li><a href="#presentation">Notre promo</a></li>
-      <li><a href="#apprenants">Les apprenants</a></li>
-      <li><a href="#formation">La formation</a></li>
-      <li><a href="#contact">Nous contacter</a></li>
-      <hr>
-      <li><span>0603 12 34 56</br> simplon@contact.co</span></li>
+      <div class="listnav1">
+        <li><a href="#presentation">Notre promo</a></li>
+        <li><a href="#apprenants">Les apprenants</a></li>
+        <li><a href="#formation">La formation</a></li>
+        <li><a href="#contact">Nous contacter</a></li>
+        <hr>
+      </div>
+      
+      <div class="listnav2">
+        <li>0101 01 01 01</li>
+        <li>simplon@contact.co</li>
+       
+        <li>21 rue des Varangues,</br> Saint-Clotilde, La Réunion</li>
+        <hr>
+        <li><a href="https://github.com/orgs/simplonco/teams/la-reunion-promo-2/repositories"><img src="images/github.png"></a> <a href="https://fr-fr.facebook.com/simplonreunion/"><img src="images/facebook.png"></a> <a href="https://twitter.com/simplon_reunion"><img src="images/twitter.png"></a></li>
+      </div>
     </ul>
-    <img src="images/facebook.png"><img src="images/twitter.png"> <img src="images/github.png">
   </nav>
+   
 
   <header>
     <div id="home">
@@ -72,11 +78,11 @@
           <div class="col-md-11">
           </div>
           <div class="col-md-1">
-            <img src="images/simplon-reunion.png">
+            <img src="images/simplon-reunion.png" class="pull-right">
           </div>
           <h1 class="text-center">Simplon Reunion</h1>
           <span class="points"></span>
-          <h2 class="text-center">devenez un <span>développeur web</span> confirmé grâce à une <span>formation qualifiante</span> de 7 mois</h2>
+          <h2 class="text-center">devenez un <span>développeur web</span> confirmé grâce à une <span>formationqualifiante</span> de 7 mois</h2>
         </div>
       </div>
     </div>
@@ -91,7 +97,7 @@
           <hr>
           <p>Cette année, nous sommes 15 à avoir sauté le pas. Nous avons tous décidé de devenir, enfin, la personne que nous voulions être. Le web attisait notre curiosité et nous brûlions d'impatience de découvrir ses secrets. <br>Un web développeur, c'est avant tout un état d'esprit; et nous avions tous cette façon de penser avant de débuter la formation. Nous sommes curieux, nous favorisons le partage, et surtout, nous sommes joueurs. Chaque jour, nous résolvons des problèmes et nous nous confrontons à nous-mêmes. Se remettre sans cesse en question et toujours chercher à se perfectionner sont nos leitmotivs. <br> Pour acquérir perpétuellement de nouvelles compétences techniques, nous disposons de deux ingrédients magiques : l'entraide et notre motivation. <br>Simplon Réunion a donc réuni 15 personnalités de différentes horizons mais surtout complémentaires. <br><br>Découvrez nos profils sans plus attendre ! </p>
         </div>
-        <div class="col-md-5 col-sm-12">
+        <div class="col-md-5 col-xs-6">
           <div class="fond">
             <div class="rectangle-video">
               <iframe width="480" height="350" src="https://www.youtube.com/embed/mpsr7K7BiS0" frameborder="0" allowfullscreen></iframe>
@@ -104,7 +110,6 @@
 
 
   <div id="apprenants" style="background: #f2f2f2;">
-
     <div class="container">
       <div class="introApprenants">
         <h1>Les apprenants</h1>
@@ -536,19 +541,21 @@
     </div>
   </div>
 
+
+
   <div id="formation">
     <div class="container">
       <h1>Simplon Réunion</h1>
       <hr>
       <div class="row">
         <div class="col-md-6 col-sm-12">
-          <img src="images/code.jpg" height="385px">
+          <img src="images/code.jpg" height="420px" class="img-responsive">
         </div> 
         <div class="col-md-6 col-sm-12">
           <p><mark>Simplon Réunion</mark> a clairement dévoilé son intention : faire de nous des développeurs Web junior dernière génération. En d’autres termes, des Développeurs Web junior dont l’économie numérique a aujourd’hui besoin.<br>La formation Développeur Web nous apprend bien plus que coder. Riche en expériences, en connaissances et tests, deux axes majeurs se dévoilent :
             <ul>
              <li>La pro activité par le biais des pratiques des <mark>méthodes Agile,</mark> en somme des outils de gestion, d’équipe et de projets.</li>
-             <li>L’apprentissage des <mark>différents langages et frameworks </mark>(Of course ! Hi, captain obvious ! Good to see you again.)<br> <strong>Front-End</strong> : HTML, CSS, JavaScript, Bootstrap, Sass, jQuery, Canvas<br><strong>Back-End </strong>: Ruby, PHP, NodeJs, Symfony, MeteorJs, NoSQL... </li>
+             <li>L’apprentissage des <mark>différents langages et frameworks </mark>(Of course ! Hi, captain obvious ! Good to see you again.)<br> <strong>Front-End</strong> : HTML, CSS, JavaScript, Bootstrap, Sass, jQuery, Canvas<br><strong>Frameworks </strong>: NodeJS et ReactJS. </li>
            </ul>
            De quoi nous armer pour nous rendre efficaces, efficients et fonctionnels.7 mois intensifs et studieux rythmés par des projets, des défis composés de :
            <ul>
@@ -556,18 +563,24 @@
             <li>1 mois de stage</li>
             <li>3 mois de Back-End</li>
           </ul>
-          La fine équipe de Simplon Réunion permet de nous initier, nous accompagner et de nous conseiller. Et en bonus, des rencontres professionnelles.
+          La fine équipe de Simplon Réunion permet de nous initier, nous accompagner et de nous conseiller. Et en bonus, des rencontres professionnelles.Les incontournables :
+          <ul>
+            <li>Bien sûr que Google est notre ami. Il le restera toujours ! Sacré ami fidèle et loyal.</li>
+            <li><mark>Créativité, Entraide et Débrouillardise</mark></li> 
+            <li>Anglais technique qui s’apprend au fur et à mesure.</li>
+          </ul>
         </p>
       </div>
     </div>
   </div>
 </div>
 
+
 <section id="contact">
   <div class="container">
     <h1>CONTACT</h1>
     <hr>
-
+    <p>21 Rue Des Vavangues, Sainte-Clotilde, Réunion</p>
     <div class="col-md-6 col-sm-12">
       <div class="googleMap">
         <div id="map"></div>
