@@ -352,10 +352,18 @@ text-align: justify;
     margin-top: 20px;
 }
 
-footer { height: 110px; background-color:#2a4789  }
+footer { height: 140px; background-color:#2a4789  }
 
 footer .container .col-md-11 p { color:#fff; font-weight: bold; padding-top: 50px; }
 
+footer .row {
+    margin-top: 20px;
+}
+
+footer p {
+    color: white;
+    text-align: center;
+}
 
 
 
