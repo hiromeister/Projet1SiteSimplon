@@ -265,6 +265,35 @@ var { color:#2a4789; font-style: none; }
 
 #apprenants hr { width: 10%; padding-bottom: 50px; margin-left: 0; border-top: 4px solid #efdf31; margin-bottom: 0; padding-bottom: 40px;}
 
+    .profils-item{
+      text-align: center;
+      border-radius: 5px;
+      margin: 15px 10px;
+    }
+    .profils-item img{
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      border: 3px solid #efdf31;
+      margin: 10px 0px;
+    }
+    .profils-item h1{
+      font-size: 20px;
+      margin: 0px 0px; 
+      color: #2a4789;
+    }
+    .profils-item .reseaux-sociaux{
+      display: flex;
+      position: center;
+      justify-content: space-around;
+    } 
+    .profils-item .reseaux-sociaux a{
+      color: red;
+    }
+    .profils-item .fa{
+      margin-right: 20px;
+      color: black;
+    }
 
 /*====================== PRESENTATION FORMATION ==================================
 */
