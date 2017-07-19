@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,900');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
 
-* { font-family: 'Roboto', sans-serif;
- }
+ { font-family: 'Roboto', sans-serif;
+}
 
 /*==Début Hamburger*/
 
@@ -11,50 +12,50 @@ mark {
 }
 
 main header h1 {
-    margin: 0;
+	margin: 0;
 }
 
 .overlay {
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    z-index: 1;
-    background: rgba(0, 0, 0, 0.5);
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 0.3s;
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	z-index: 1;
+	background: rgba(0, 0, 0, 0.5);
+	opacity: 0;
+	pointer-events: none;
+	transition: opacity 0.3s;
 }
 
 .overlay.visible {
-    opacity: 1;
+	opacity: 1;
 }
 
 /* Nav */
 
 #nav-main {
-    width: 250px;
-    height: 100%;
-    position: fixed;
-    left: -250px;
-    z-index: 2;
-    background: #fff;
-    transition: all 0.3s;
+	width: 250px;
+	height: 100%;
+	position: fixed;
+	left: -250px;
+	z-index: 2;
+	background: #fff;
+	transition: all 0.3s;
 }
 
 #nav-main.open {
-    left: 0;
+	left: 0;
 }
 
 #nav-main ul {
-    padding: 90px 0 0 0;
-    list-style: none;
+	padding: 90px 0 0 0;
+	list-style: none;
 }
 
 #nav-main li {
-    margin: 16px 24px;
-    padding-top: 25px;
+	margin: 16px 24px;
+	padding-top: 25px;
 }
 
 #nav-main li a{
@@ -76,101 +77,101 @@ main header h1 {
 #nav-main li span { margin-left: 40px; }
 
 #nav-button {
-    display: block;
-    position: fixed;
-    top: 8px;
-    left: 8px;
-    z-index: 3;
-    overflow: hidden;
-    margin: 0;
-    padding: 0;
-    width: 48px;
-    height: 48px;
-    font-size: 0;
-    text-indent: -9999px;
-    background: #262626;
-    appearance: none;
-    border-radius: 50%;
-    border: none;
-    box-shadow: 0 0 0 2px #262626;
-    cursor: pointer;
-    transition: box-shadow 0.3s, transform 0.3s;
+	display: block;
+	position: fixed;
+	top: 8px;
+	left: 8px;
+	z-index: 3;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	width: 48px;
+	height: 48px;
+	font-size: 0;
+	text-indent: -9999px;
+	background: #262626;
+	appearance: none;
+	border-radius: 50%;
+	border: none;
+	box-shadow: 0 0 0 2px #262626;
+	cursor: pointer;
+	transition: box-shadow 0.3s, transform 0.3s;
 }
 
 #nav-button.hidden {
-    transform: translateY(-68px);
+	transform: translateY(-68px);
 }
 
 #nav-button:focus {
-    outline: none;
+	outline: none;
 }
 
 #nav-button span {
-    display: block;
-    position: absolute;
-    top: 23px;
-    left: 16px;
-    right: 16px;
-    height: 2px;
-    background: #fff;
+	display: block;
+	position: absolute;
+	top: 23px;
+	left: 16px;
+	right: 16px;
+	height: 2px;
+	background: #fff;
 }
 
 #nav-button span::before,
 #nav-button span::after {
-    position: absolute;
-    display: block;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background-color: #fff;
-    content: "";
+	position: absolute;
+	display: block;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	background-color: #fff;
+	content: "";
 }
 
 #nav-button span::before {
-    top:-6px;
+	top:-6px;
 }
 
 #nav-button span::after {
-    bottom: -6px;
+	bottom: -6px;
 }
 
 /* Nav button animation */
 #nav-button span {
-    transition: transform 0.3s;
+	transition: transform 0.3s;
 }
 
 #nav-button span::before {
-    transform-origin: top right;
-    transition: transform 0.3s, width 0.3s, top 0.3s;
+	transform-origin: top right;
+	transition: transform 0.3s, width 0.3s, top 0.3s;
 }
 
 #nav-button span::after {
-    transform-origin: bottom right;
-    transition: transform 0.3s, width 0.3s, bottom 0.3s;
+	transform-origin: bottom right;
+	transition: transform 0.3s, width 0.3s, bottom 0.3s;
 }
 
 /* Menu open */
 #nav-button.open {
-    box-shadow: none;
+	box-shadow: none;
 }
 
 #nav-button.open span {
-    transform: rotate(180deg);
+	transform: rotate(180deg);
 }
 
 #nav-button.open span::before,
 #nav-button.open span::after {
-    width: 50%;
+	width: 50%;
 }
 
 #nav-button.open span::before {
-    top: 0;
-    transform: translateX(6px) translateY(1px) rotate(45deg);
+	top: 0;
+	transform: translateX(6px) translateY(1px) rotate(45deg);
 }
 
 #nav-button.open span::after {
-    bottom: 0;
-    transform: translateX(6px) translateY(1px) rotate(-45deg);
+	bottom: 0;
+	transform: translateX(6px) translateY(1px) rotate(-45deg);
 }
 
 
@@ -178,19 +179,19 @@ main header h1 {
 /*==Fin Hamburger*/
 
 /*BANNIERE*/
- #home .banner{
-  background-image:url(../images/home-pattern.png), url(../images/bg2.jpg);
-  background-repeat: repeat, no-repeat;
-  background-size: auto, cover;
-  background-position: center center;
-  height: 100%;
-  min-height: 100%;
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  margin:0;
-  padding:0;
-  font-family: 'Arvo', serif;
+#home .banner{
+	background-image:url(../images/home-pattern.png), url(../images/bg2.jpg);
+	background-repeat: repeat, no-repeat;
+	background-size: auto, cover;
+	background-position: center center;
+	height: 100%;
+	min-height: 100%;
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	margin:0;
+	padding:0;
+	font-family: 'Arvo', serif;
 }
 
 #home .banner .container .col-md-1 img { height: 60px; width: 160px;position: relative; top: -200px; }
@@ -222,31 +223,35 @@ main header h1 {
 	text-transform: uppercase;
 	font-weight: bold;}
 
-#home .banner .container h2 span {color:#F3E036; }
+	#home .banner .container h2 span {color:#F3E036; }
 
+/*====================== PRESENTATION DE LA PROMO ==================================
+*/
+
+#presentation {
+	margin-top: 40px;
+}
+#presentation p ul {
+	font-family: 'Noto Sans', sans-serif;
+
+}
 #presentation .rectangle-video {
-	margin-top: 45px;
+		margin-top: 45px;
 }
 
 
 #presentation .container h1 {
-	font-size: 41px; color:#2a4789; text-transform: uppercase; font-weight: bold;
+		font-size: 41px; color:#2a4789; text-transform: uppercase; font-weight: bold;
 }
 
-/*#presentation .container h1:before {
-	position: absolute;
-	content: '';
-	bottom: -65px;
-	left: 0;
-	background: yellow;
-	width: 720px;
-	height: 20px;
-	z-index: -9999;
-	left: 100px;
-}
-*/
 #presentation hr {width: 10%; padding-bottom: 50px; margin-left: 0; border-top: 4px solid #efdf31; margin-bottom: 0; padding-bottom: 40px;}
 
+/*====================== PRESENTATION APPRENANTS ==================================
+*/
+
+#apprenants {
+	margin-top: 50px;
+}
 #apprenants .introApprenants { padding-top: 50px; }
 
 #apprenants .introApprenants h1 {font-size: 41px; color:#2a4789; text-transform: uppercase; font-weight: bold; }
@@ -254,23 +259,28 @@ main header h1 {
 #apprenants hr { width: 10%; padding-bottom: 50px; margin-left: 0; border-top: 4px solid #efdf31; margin-bottom: 0; padding-bottom: 40px;}
 
 
+/*====================== PRESENTATION FORMATION ==================================
+*/
 
+
+#formation {
+	margin-top: 50px; margin-bottom: 50px;
+}
+#formation  p ul{
+	font-family: 'Noto Sans', sans-serif;
+}
 #formation .container h1 {font-size: 41px; color:#2a4789; text-transform: uppercase; font-weight: bold; padding-top: 50px; }
 
 #formation hr { width: 10%; padding-bottom: 50px; margin-left: 0; border-top: 4px solid #efdf31; margin-bottom: 0; padding-bottom: 40px; }
 
-#formation img {
-
-}
-
-
-
 
 /*====================== CONTACT ==================================
 */
-
+#contact {
+	background-color: #f2f2f2; margin-top: 50px;
+}
 #contact h1 {
-font-size: 41px; color:#2a4789; text-transform: uppercase; font-weight: bold;
+	font-size: 41px; color:#2a4789; text-transform: uppercase; font-weight: bold;
 }
 
 #contact hr { width: 10%; margin-left: 0; border-top: 4px solid #efdf31; margin-bottom: 0; padding-bottom: 20px; }
@@ -279,10 +289,10 @@ font-size: 41px; color:#2a4789; text-transform: uppercase; font-weight: bold;
 	padding-left: 0;
 }
 .carte {width: 100%; height: 540px; background-color: blue;}
- #map {
-        height: 398px;
-        width: 100%;
-       }
+#map {
+	height: 398px;
+	width: 100%;
+}
 .googleMap {
 	height: 500px;
 	margin-top: 20px;
