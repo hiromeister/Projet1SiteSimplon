@@ -42,4 +42,19 @@ $(document).ready(function () {
 
         lastScrollTop = scrollTop;
     }
-});
+    //button back to top
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 610) {
+            $('#gotop').slideDown(400);
+        } else {
+            $('#gotop').slideUp(400);
+        }
+    });
+
+            // Animate the scroll to top
+            $('#gotop').click(function(event) {
+                event.preventDefault();
+                
+                $('html, body').animate({scrollTop: 0}, 300);
+            })
+        });
