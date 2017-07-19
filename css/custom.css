@@ -3,8 +3,6 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,900');
 /*=Fin Fonts*/
 
-p { text-align: justify;
- }
 
 
 
@@ -238,6 +236,11 @@ var { color:#2a4789; font-style: none; }
 #presentation {
     margin-top: 40px;
 }
+
+#presentation p{ 
+text-align: justify;
+ }
+
 #presentation p ul {
     font-family: 'Noto Sans', sans-serif;
 
@@ -309,7 +312,7 @@ var { color:#2a4789; font-style: none; }
 
 #formation hr { width: 10%; padding-bottom: 50px; margin-left: 0; border-top: 4px solid #efdf31; margin-bottom: 0; padding-bottom: 40px; }
 
-
+#formation p {text-align: justify;}
 /*====================== CONTACT ==================================
 */
 #contact {
