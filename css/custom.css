@@ -352,7 +352,7 @@ text-align: justify;
     margin-top: 20px;
 }
 
-footer { height: 140px; background-color:#2a4789  }
+footer { height: 100%; background-color:#2a4789  }
 
 footer .container .col-md-11 p { color:#fff; font-weight: bold; padding-top: 50px; }
 
@@ -360,11 +360,41 @@ footer .row {
     margin-top: 20px;
 }
 
+
 footer p {
     color: white;
-    text-align: center;
 }
 
+footer .col-md-4 {
+
+width: 20%;
+    
+}
+
+footer ul li{
+list-style: none;
+color: white;
+}
+
+footer ul li a {
+    color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.3rem;
+}
+
+footer ul li a:hover {
+    color: white; 
+
+}
+
+.text-center {
+    margin-top: 30px;
+}
+
+footer .col-md-3:last-child {
+    width: 250px;
+    margin-left: 40px;
+}
 
 
 /*button back to top*/
