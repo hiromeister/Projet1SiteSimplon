@@ -57,4 +57,18 @@ $(document).ready(function () {
                 
                 $('html, body').animate({scrollTop: 0}, 300);
             })
+
+            let forma = "BIENVENUE";
+            $('#nav-button').on('mouseenter',function(){
+                $('.fenetre').show();
+                $('.fenetre').text(forma);
+
+                
+
+            });
+            $('#nav-button').on('mouseleave',function(){
+                $('.fenetre').text("");
+            });
+
+            
         });
