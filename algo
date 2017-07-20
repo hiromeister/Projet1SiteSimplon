@@ -1,0 +1,27 @@
+DÉBUT
+mots <- ["nooob", "johndoe", "simplon", "congolexicomatisation", "javascript"] 
+motAleatoire <- Aleatoire(mots)
+pendu <- 6
+nbLettreTrouve <- 0
+POUR i <- 0 à i < TAILLE(motAleatoire) PAS 1
+AFFICHER ("_")
+FIN POUR
+TANT QUE nbLettreTrouve < TAILLE(motAleatoire)  ET pendu >= 0 
+lettreJoueur <- Entrer ("Proposez une lettre")
+POUR j <- 0 à j < TAILLE(motAleatoire) PAS 1
+SI LettreJoueur = motAleatoire[j] ALORS 
+nbLettreTrouve <- nbLettreTrouve + 1 
+REMPLACER(LettreJoueur, j)
+SINON
+pendu <- pendu-1
+AFFICHER_PENDU (pendu)
+ FINSI
+FINPOUR
+FIN TANT QUE
+SI nbLettreTrouve = TAILLE(motAleatoire) ALORS
+AFFICHER ("Gagné")
+SINON 
+AFFICHER ("Perdu")
+FINSI
+REJOUER()
+FIN
