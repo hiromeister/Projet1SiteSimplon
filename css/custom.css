@@ -407,6 +407,36 @@ footer .col-md-3:last-child {
    
 }
 
+@media only screen and (max-width: 500px) {
+    footer .col-md-3:last-child{
+        display: flex;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    #home .banner .container h1 {
+        font-size: 4.0em;
+        margin-top: 100px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    #presentation .container h1{
+        font-size: 2.4em;
+    }
+
+    #apprenants .introApprenants h1 {
+        font-size: 2.4em;
+    }
+
+    #formation .container h1, {
+        font-size: 2.4em;
+        } 
+
+    #contact h1 {
+        font-size: 2.4em;
+    }
+}
 
 
 
