@@ -6,6 +6,8 @@
 
 
 
+
+
 /*=NAV*/
 
 mark {
@@ -209,7 +211,7 @@ var { color:#2a4789; font-style: none; }
 #home .banner .container h1{
     text-transform: uppercase;
     font-weight: 900;
-    font-size: 80px;
+    font-size: 5em;
     color:#F3E036;
     letter-spacing: 6px;
     font-family: 'Source Sans Pro', sans-serif;
