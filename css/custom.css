@@ -417,3 +417,8 @@ footer .col-md-3:last-child {
 }
 
 
+@media screen (max-width: 990px) {
+    footer {
+
+    }
+}
